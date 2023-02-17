@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon -r dotenv/config src/index.ts dotenv_config_path=.env.development"
+    "start": "nodemon -r dotenv/config src/index.ts dotenv_config_path=.env.local"
   },
   "author": "",
   "license": "ISC",
