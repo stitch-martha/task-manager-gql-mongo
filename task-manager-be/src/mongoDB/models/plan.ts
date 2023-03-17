@@ -31,19 +31,17 @@ const taskSchema = new Schema({
     modified_at: {
       type: Date, 
     },
-    plan: {
-      affected_areas:{
-        type: [String]
-      },
-      steps: {
-        type: String
-      },
-      discussed: {
-        type: Boolean
-      },
-      time_estimate: {
-        type: Number
-      }
+    affected_areas:{
+      type: [String]
+    },
+    steps: {
+      type: String
+    },
+    discussed: {
+      type: Boolean
+    },
+    time_estimate: {
+      type: Number
     }
 });
 
