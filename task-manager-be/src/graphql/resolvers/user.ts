@@ -16,6 +16,10 @@ const userResolvers = {
         return e.message;
       }
     }
+  },
+
+  User: {
+    id: (data)=> data._id 
   }
 }
 
