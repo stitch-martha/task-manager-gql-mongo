@@ -21,6 +21,7 @@ const taskSchema = new Schema({
     },
     type_of_work: {
       type: String,
+      enum : ['FE','BE', 'FS'],
       required: true,
     },
     created_at: {
