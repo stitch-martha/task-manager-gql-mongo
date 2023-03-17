@@ -9,8 +9,13 @@ const userResolvers = {
 
   Mutation:  {
     add_user: async (_, args) => {
+      const newUser = new User({
+        name: args.name,
+        family_name: args.family_name,
+     });
+      
       try {
-        await User.create(args);
+        newUser.save();
         return 'User added successfully';
       } catch(e) {
         return e.message;
